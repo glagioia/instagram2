@@ -109,7 +109,7 @@ function ProfileHeader() {
             <div className='flex justify-center items-center '>
                 <div className='grid grid-cols-3 gap-1 sm:gap-5'>
                     {userPosts.map(post => (
-                        <img src={post.data().image} alt='post img' className='lg:h-64 h-32 w-full object-cover overflow-hidden cursor-pointer' />
+                        <img key={post.data().id} src={post.data().image} alt='post img' className='lg:h-64 h-32 w-full object-cover overflow-hidden cursor-pointer' />
                     ))}
 
                 </div>
